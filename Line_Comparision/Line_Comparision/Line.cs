@@ -35,19 +35,25 @@ namespace Line_Comparision
             double deltaY = y2 - y1;
             double deltaA = a2 - a1;
             double deltaB = b2 - b1;
+
             double lengthOfLine1 = Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2));
             Console.WriteLine("Length of Line1 is: "+ lengthOfLine1);
+
             double lengthOfLine2 = Math.Sqrt(Math.Pow(deltaA, 2) + Math.Pow(deltaB, 2));
             Console.WriteLine("Length of Line2 is: "+ lengthOfLine2);
 
-            //Check equality of two lines
+            //Comparing Line1 and Line2
             if (lengthOfLine1.Equals(lengthOfLine2))
             {
-                Console.WriteLine("length of line1 and line2 are equals");
+                Console.WriteLine("Two lines are equal in length.");
+            }
+            else if(lengthOfLine1 > lengthOfLine2)
+            {
+                Console.WriteLine("Line 1 is greater in length than Line 2.");
             }
             else
             {
-                Console.WriteLine("length of line1 and line2 are not equal equals");
+                Console.WriteLine("Line 1 is greater in length than Line 2.");
             }
         }
     }

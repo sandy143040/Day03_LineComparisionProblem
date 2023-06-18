@@ -27,9 +27,7 @@ namespace Line_Comparision
             double b2 = Convert.ToDouble(Console.ReadLine());
 
             Line line = new Line(x1, y1, x2, y2, a1, b1, a2, b2);
-            //double length = Convert.ToDouble(line.CalculateLength());
             line.CalculateLength();
-            //Console.WriteLine("The length of the line is: " + length);
 
             Console.ReadLine();
         }

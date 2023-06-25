@@ -8,33 +8,33 @@ namespace Line_Comparision
 {
     public class Line
     {
-        private double x1;
-        private double y1;
-        private double x2;
-        private double y2;
-        private double a1;
-        private double b1;
-        private double a2;
-        private double b2;
+        private double xOne;
+        private double yOne;
+        private double xTwo;
+        private double yTwo;
+        private double aOne;
+        private double bOne;
+        private double aTwo;
+        private double bTwo;
 
-        public Line(double x1, double y1, double x2, double y2, double a1, double b1, double a2, double b2)
+        public Line(double xOne, double yOne, double xTwo, double yTwo, double aOne, double bOne, double aTwo, double bTwo)
         {
-            this.x1 = x1;
-            this.y1 = y1;
-            this.x2 = x2;
-            this.y2 = y2;
-            this.a1 = a1;
-            this.b1 = b1;
-            this.a2 = a2;
-            this.b2 = b2;
+            this.xOne = xOne;
+            this.yOne = yOne;
+            this.xTwo = xTwo;
+            this.yTwo = yTwo;
+            this.aOne = aOne;
+            this.bOne = bOne;
+            this.aTwo = aTwo;
+            this.bTwo = bTwo;
         }
 
         public void CalculateLength()
         {
-            double deltaX = x2 - x1;
-            double deltaY = y2 - y1;
-            double deltaA = a2 - a1;
-            double deltaB = b2 - b1;
+            double deltaX = xTwo - xOne;
+            double deltaY = yTwo - yOne;
+            double deltaA = aTwo - aOne;
+            double deltaB = bTwo - bOne;
 
             double lengthOfLine1 = Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2));
             Console.WriteLine("Length of Line1 is: "+ lengthOfLine1);
